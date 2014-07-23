@@ -1,14 +1,27 @@
 #!/bin/sh
 
+#コンソール出力
+echo "hello echo"
 printf "hello world\n"
+#上書き書き込み
+printf "hello external1\n" > text1.txt
+#追加書き込み
+printf "hello external\n" >> text2.txt
+#ヒアドキュメント
+text3.txt <<TXT1
+aaa
+bbb
+ccc
+TXT1
 
 #############################
 #変数
 #############################
 #変数の代入
 aaa=100
-#
+#変数の参照
 printf "${aaa} is a\n"
+
 
 #############################
 #関数
