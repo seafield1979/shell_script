@@ -1,0 +1,13 @@
+#!/bin/sh
+
+#置換
+
+#############################
+#sed
+#############################
+sed -e "s/\d+//g" input_text1.txt
+
+file_name="linux123.txt" 
+#echo $file_name | sed -e "s/\.[^.]*$//g" 
+#echo $file_name | sed -e "s/[0-9]\{1,10\}/syutaro/g" 
+cat input_text1.txt | sed -e s/aaa/zzz/g
